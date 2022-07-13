@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int n = 0, i = 0, j = 0, x = 1;
 	stack_t *str = NULL;
 	instruction_t st_fn[] = {{"push", push_pall},
-							{"pall", pall_push},
+							{"pall", pall},
 							{"pint", printe},
 							{"pop", pop},
 							{"swap", swap},
