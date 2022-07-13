@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 							{"add", add},
 							{"nop", nop},
 							{"sub", sub},
-							{"div", div},
+							{"div", dive},
 							{"mul", mul},
 							{"mod", mod},
 							{"#", ha},
@@ -45,13 +45,13 @@ int main(int argc, char *argv[])
 		i = 0;
 		while (x == 1)
 		{
-			x = getline(&s, &line_buf_size, fi);
+			x = getline(&s, &line_buffer_size, fi);
 			j++;
 		}
 		if (x < 0)
 			break;
-		n = toke2(s);
-		c = toke1(s);
+		n = stoke_2(s);
+		c = stoke_1(s);
 		if (c)
 		if ((n == 6666 && strcmp(c, st_fn[0].opcode) == 0))
 		{

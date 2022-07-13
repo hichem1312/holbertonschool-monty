@@ -5,7 +5,7 @@
 *@line_number: line number
 *Return : 0
 **/
-void div(stack_t **stack, unsigned int line_number)
+void dive(stack_t **stack, unsigned int line_number)
 {
     int x = 0;
 

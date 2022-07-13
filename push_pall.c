@@ -9,7 +9,7 @@ void push_pall(stack_t **top, unsigned int line_num)
 {
 	stack_t *new_stack;
 
-	new = malloc(sizeof(stack_t));
+	new_stack = malloc(sizeof(stack_t));
 	if (!new_stack)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
@@ -26,5 +26,5 @@ void push_pall(stack_t **top, unsigned int line_num)
 	{
 	(*top)->prev = new_stack;
 	}
-	*top = new;
+	*top = new_stack;
 }
